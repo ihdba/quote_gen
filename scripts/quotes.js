@@ -62,5 +62,17 @@ const localQuotes = [
     {
       "text": "Today is the tomorrow we worried about yesterday.",
       "author": null
-    }
+    },
+    {
+      "text": "So far, has today been a great day?",
+      "author": "John C. Maxwell"
+    },
+    {
+      "text": "How do you define success for today?",
+      "author": "John C. Maxwell"
+    },
+    {
+      "text": "Yesterday Ended Last Night.",
+      "author": "John C. Maxwell"
+    },
   ]
