@@ -45,8 +45,9 @@ function newQuote() {
         quoteText.classList.remove('long-quote');
     }
 
-    // Set the quote and Hide the Loader
+    // Set the quote, Hide the Loader
     complete();
+    
     quoteText.textContent = quote.text;
 
     // Set focus on "New Quote" button so bypressing Enter we get new quote as well

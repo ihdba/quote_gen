@@ -75,4 +75,24 @@ const localQuotes = [
       "text": "Yesterday Ended Last Night.",
       "author": "John C. Maxwell"
     },
+    {
+      "text": "One today is worth two tomorrows; what I am to be, I am now becoming.",
+      "author": "BENJAMIN FRANKLIN"
+    },
+    {
+      "text": "You can pay now and play later, or you can play now and pay later. But either way, you are going to pay.",
+      "author": "John C. Maxwell"
+    },
+    {
+      "text": "Most people don’t lead their own lives—they accept their lives.",
+      "author": "John Kotter"
+    },
+    {
+      "text": "The secret of success in life is for a man to be ready for his time when it comes.",
+      "author": "BENJAMIN DISRAELI"
+    },
+    {
+      "text": "TFaith is to believe what you do not see; the reward of this faith is to see what you believe.",
+      "author": "Saint Augustine"
+    },
   ]
