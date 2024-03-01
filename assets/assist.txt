@@ -1,0 +1,32 @@
+https://ihdba.github.io/quote_gen/
+
+
+https://heropatterns.com
+
+
+
+
+
+// // Get Quotes from API
+
+// async function getQuotes() {
+//     const apiUrl = 'https://type.fit/api/quotes'
+
+//     try {
+//         const response = await fetch(apiUrl);
+//         apiQuotes = await response.json();
+//         newQuote();
+//     } catch (error) {
+//         //  Catch error (In production you cast an alert with the error message)
+//     }
+
+
+// }
+
+
+// //  On load
+
+// getQuotes();
+
+
+https://github.com/ihdba/quote_gen.git
