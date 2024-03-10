@@ -30,3 +30,26 @@ https://heropatterns.com
 
 
 https://github.com/ihdba/quote_gen.git
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$ JS Tips
+// Looping over Array
+
+- not good
+for (var i = 0; i < myArr.length; i++ ){
+    console.log(myArr[i]);
+}
+
+-- More concise and functional
+myArr.forEach(item => conslole.log(item))
+
+# conditional 
+if (user.age > 18{
+    console.log("Adult");
+} else {
+    conslole.log("Minor");
+}
+
+-- Better use ternary for simple conditionals
+conslole.log(user.age > 18 ? "Adult" : "Minor")

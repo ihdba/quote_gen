@@ -11,16 +11,14 @@ const loader = document.getElementById('loader');
 
 // let apiQuotes = [];
 
-// Show Loading
 
-function loading() {
+//  Loading Spinner Show 
+function showLoadingSpinner() {
     loader.hidden = false;
     quoteContainer.hidden = true;
 }
-
-
-// Hide Loading
-function complete() {
+// Remove Loading Spinner
+function removeLoadingSpinner() {
     quoteContainer.hidden = false;
     loader.hidden = true;
 }
@@ -28,7 +26,7 @@ function complete() {
 
 //  Show the quote
 function newQuote() {
-    loading();
+    showLoadingSpinner();
     //  Pick a random quote from apiQuotes array
     const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
 
@@ -38,7 +36,7 @@ function newQuote() {
     } else {
         authorText.textContent = quote.author;
     }
-    // Check quote length to set the right style
+    // Check quote length to set dynamically right css style
     if (quote.text.length > 50){
         quoteText.classList.add('long-quote');
     } else {
@@ -46,7 +44,7 @@ function newQuote() {
     }
 
     // Set the quote, Hide the Loader
-    complete();
+    removeLoadingSpinner();
     
     quoteText.textContent = quote.text;
 
@@ -60,15 +58,18 @@ function newQuote() {
 // Get Quotes from API
 
 async function getQuotes() {
-    loading();
+    showLoadingSpinner();
     const apiUrl = 'https://type.fit/api/quotes'
 
     try {
         const response = await fetch(apiUrl);
         apiQuotes = await response.json();
         newQuote();
+        throw new Error('oops');
     } catch (error) {
         //  Catch error (In production you cast an alert with the error message)
+        console.log(error)
+        getQuotes(); // use recursive to display newquote instead of displaing error
     }
 
 
@@ -87,19 +88,20 @@ function tweetQuote() {
 }
 
 // Event Listener
-
-newQuoteBtn.addEventListener('click', newQuote);
+// If getting from local quote json file
+// newQuoteBtn.addEventListener('click', newQuote);
+// For getting quotes form API
+newQuoteBtn.addEventListener('click', getQuotes);
 twitterBtn.addEventListener('click', tweetQuote);
 
-// On Load
-// get quotes from local quotes.js
+// On Load get quotes from local quotes.js
 
-// newQuote();
-
+//newQuote();
 
 
 
-// //  On load
 
-getQuotes();
+// //  On load get from API
+
+//getQuotes();
 

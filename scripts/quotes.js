@@ -28,6 +28,10 @@ const localQuotes = [
       "author": "Carl Sandburg"
     },
     {
+      "text": "NSuccessful people do consistently what normal people do occasionally",
+      "author": null
+    },
+    {
       "text": "Well begun is half done.",
       "author": "Aristotle"
     },
@@ -92,7 +96,15 @@ const localQuotes = [
       "author": "BENJAMIN DISRAELI"
     },
     {
-      "text": "TFaith is to believe what you do not see; the reward of this faith is to see what you believe.",
+      "text": "Faith is to believe what you do not see; the reward of this faith is to see what you believe.",
       "author": "Saint Augustine"
+    },
+    {
+      "text": "The secret of success in life is for a man to be ready for his time when it comes.",
+      "author": "Benjamin Disraeli"
+    },
+    {
+      "text": "When dealing with people, let us remember we are not dealing with creatures of logic. We are dealing with creatures of emotion, creatures bristling with prejudices and motivated by prive and vanity.",
+      "author": "Dale Carnegie"
     },
   ]
